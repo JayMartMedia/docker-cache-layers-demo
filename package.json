@@ -5,8 +5,11 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "start:node-api": "yarn workspace node-api start",
-    "dev:node-api": "yarn workspace node-api dev"
+    "node-api:start": "yarn workspace node-api start",
+    "node-api:dev": "yarn workspace node-api dev",
+    "next-app:build": "yarn workspace next-app build",
+    "next-app:start": "yarn workspace next-app start",
+    "next-app:dev": "yarn workspace next-app dev"
   },
   "workspaces": [
     "packages/*"
