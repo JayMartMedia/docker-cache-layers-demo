@@ -1,7 +1,12 @@
 FROM node:16-alpine
 
+# Copies all source files
 COPY . .
 
 RUN yarn install
 
 CMD [ "yarn", "dev" ]
+
+# For a production build you would likely build an optimized version then start the app.
+# RUN yarn build
+# CMD [ "yarn", "start" ]

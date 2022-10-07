@@ -1,9 +1,11 @@
 FROM node:16-alpine
 
+# Copies only ./package.json file
 COPY ./package.json ./package.json
 
-RUN npm install
+RUN yarn install
 
+# Copies rest of source files
 COPY . .
 
 CMD [ "npm", "start" ]
